@@ -36,9 +36,6 @@ function setState(newState) {
     localStorage.setItem('quizState', JSON.stringify(state));
   }
   render();
-  }
-
-  return count.toLocaleString(); // تنسيق الأرقام (14,257)
 }
 
 function switchLang() {
