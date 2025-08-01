@@ -305,7 +305,7 @@ function handleAppClick(e) {
     `;
     zodiacResult.style.display = 'block';
     zodiacBtn.disabled = true;
-    zodiacBtn.textContent = '✨ ' + (state.lang === 'ar' ? "تم فتح البوابة" : "Gate opened");
+    zodiacBtn.textContent = '✨بوابة الابراج ' + (state.lang === 'ar' ? "تم فتح البوابة" : "Gate opened");
     zodiacBtn.style.opacity = '0.8';
     zodiacBtn.style.cursor = 'not-allowed';
   }
