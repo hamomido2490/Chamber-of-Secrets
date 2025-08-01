@@ -116,11 +116,11 @@ export function getHoroscopePredictions(zodiacSign, lang = getLang()) {
   };
   const today = new Date().getDate();
   const dailyIndex = (zodiacSign.charCodeAt(0) + today) % 3;
-  const daily = (dailyPredictions[lang][zodiacSign] || [])[dailyIndex] || (lang === 'ar' ? "توقعات إيجابية في الطريق." : "Positive predictions ahead.");
+  const daily = (dailyPredictions[lang][zodiacSign] || [])[dailyIndex] || (lang === 'ar' ? "التنبؤ اليومي لبرجك" : "Positive predictions ahead.");
 
   return {
     daily: daily,
-    weekly: weeklyPredictions[lang][zodiacSign] || (lang === 'ar' ? "توقعات إيجابية في الطريق." : "Positive predictions ahead."),
-    yearly: yearlyPredictions[lang][zodiacSign] || (lang === 'ar' ? "توقعات إيجابية في الطريق." : "Positive predictions ahead.")
+    weekly: weeklyPredictions[lang][zodiacSign] || (lang === 'ar' ? "التنبؤ الاسبوعي لبرجك" : "Positive predictions ahead."),
+    yearly: yearlyPredictions[lang][zodiacSign] || (lang === 'ar' ? "التنبؤ السنوي لبرجك" : "Positive predictions ahead.")
   };
 }
