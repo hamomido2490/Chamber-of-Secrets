@@ -35,16 +35,7 @@ function setState(newState) {
   if (typeof localStorage !== 'undefined') {
     localStorage.setItem('quizState', JSON.stringify(state));
   }
-  render();// --- دالة: الحصول على عدد الزوار ---
-function getVisitorCount() {
-  const key = 'chamber_of_secrets_visitors';
-  const saved = localStorage.getItem(key);
-  let count = saved ? parseInt(saved) : 14257; // عدد افتتاحي واقعي
-
-  // زيادة وهمية صغيرة في كل زيارة (بين 1 و3)
-  if (!saved) {
-    count += Math.floor(Math.random() * 3) + 1;
-    localStorage.setItem(key, count.toString());
+  render();
   }
 
   return count.toLocaleString(); // تنسيق الأرقام (14,257)
