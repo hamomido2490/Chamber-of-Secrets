@@ -22,8 +22,3 @@
 - Chart.js
 - React Chart.js 2
 
-## التثبيت والتشغيل
-
-1. **تثبيت الاعتماديات**
-   ```bash
-   npm install
